@@ -36,12 +36,12 @@ class _AddNoteFormState extends State<AddNoteForm> {
       autovalidateMode: autovalidateMode,
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           CustomTextField(
             hint: 'Title',
-            hintTextStyle: TextStyle(fontSize: 28),
+            hintTextStyle: const TextStyle(fontSize: 28),
             onSaved: (value) {
               title = value;
             },
@@ -53,7 +53,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               subtitle = value;
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 45,
           ),
           CustomBotton(
