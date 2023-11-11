@@ -20,7 +20,7 @@ class CustomEditNoteAppBar extends StatelessWidget {
         CustomIcon(
           onPressed: onPressed,
           icon: Icons.save_outlined,
-          ),
+        ),
       ],
     );
   }
