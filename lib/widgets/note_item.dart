@@ -14,7 +14,9 @@ class NoteItem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return  EditNoteView(notes: notes,);
+          return EditNoteView(
+            notes: notes,
+          );
         }));
       },
       child: Container(
@@ -23,7 +25,7 @@ class NoteItem extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: const Color(0xffFD99FF),
+          color: Color(notes.color),
         ),
         child: Row(
           children: [
