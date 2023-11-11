@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/views/edit_note_view.dart';
 
 class NoteItem extends StatelessWidget {
-  const NoteItem({super.key});
+  const NoteItem({super.key, required this.notes});
+
+  final NoteModel notes;
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +23,9 @@ class NoteItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           color: const Color(0xffFD99FF),
         ),
-        child: const Text(
-          'UI concepts worth exsisting',
-          style: TextStyle(color: Colors.black, fontSize: 24),
+        child: Text(
+          notes.title,
+          style: const TextStyle(color: Colors.black, fontSize: 24),
         ),
       ),
     );
