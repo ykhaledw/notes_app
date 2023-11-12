@@ -21,7 +21,7 @@ class NoteItem extends StatelessWidget {
       },
       child: Container(
         padding:
-            const EdgeInsets.only(left: 50, top: 24, bottom: 24, right: 32),
+            const EdgeInsets.only(left: 20, top: 24, bottom: 24, right: 20),
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -29,11 +29,17 @@ class NoteItem extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Text(
-              notes.title,
-              style: const TextStyle(color: Colors.black, fontSize: 24),
+            Expanded(
+              child: Text(
+                notes.title,
+                style: const TextStyle(color: Colors.black, fontSize: 24),
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
-            const Spacer(),
+            const SizedBox(
+              width: 10,
+            ),
             IconButton(
               onPressed: () {
                 notes.delete();
@@ -44,7 +50,7 @@ class NoteItem extends StatelessWidget {
                 color: Colors.black,
                 size: 32,
               ),
-            )
+            ),
           ],
         ),
       ),

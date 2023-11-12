@@ -43,6 +43,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
             onSaved: (value) {
               subtitle = value;
             },
+            inputTextStyle:const TextStyle(fontSize: 32),
           ),
           const SizedBox(
             height: 45,

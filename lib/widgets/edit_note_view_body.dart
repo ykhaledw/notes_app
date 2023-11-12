@@ -45,11 +45,9 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
                 title = value;
               },
               hint: widget.note.title,
+              maxLines: 5,
               hintTextStyle: const TextStyle(fontSize: 32),
               inputTextStyle: const TextStyle(fontSize: 32),
-            ),
-            const SizedBox(
-              height: 15,
             ),
             CustomTextField(
               onChanged: (value) {
