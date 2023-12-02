@@ -1,16 +1,14 @@
 # notes_app
 
-A new Flutter project.
+Developed a versatile Notes app using Flutter, enabling users to efficiently capture, organize, and manage their thoughts. The app features an intuitive interface for creating, editing, and deleting notes, with options for categorization and color-coding. Leveraged Flutter's widget library to ensure a seamless and responsive user experience. Integrated local storage for data persistence, ensuring that users can access their notes across sessions.
 
-## Getting Started
+## Tools
 
-This project is a starting point for a Flutter application.
+Hive
+modal_progress_hud_nsn
+intl
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+1.Notes Screen
+2.Add Note Screen
+3.Edit Note Screen
