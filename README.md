@@ -4,9 +4,9 @@ Developed a versatile Notes app using Flutter, enabling users to efficiently cap
 
 ## Tools
 
-Hive
-modal_progress_hud_nsn
-intl
+- Hive
+- modal_progress_hud_nsn
+- intl
 
 ## Features
 1.Notes Screen
